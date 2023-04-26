@@ -7,7 +7,11 @@ import Cropper from './Cropper';
 
 function App() {
   const [crop, setCrop] = useState({
-      aspect: 16/9
+      width:20,
+      height: 20,
+      unit: "%",
+      x: 0,
+      y: 0,
   });
   const [imageUrl, setImageUrl] = useState()
   const handleImageChange = (e) => {
